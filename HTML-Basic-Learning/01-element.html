@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等 -->
     <meta charset="UTF-8">
+    <!-- meta定义元元素，不显示页面上，但是能被网页解析 -->
+    <meta name="author" content="lesenelir">
     <title>第一个Demo</title>
 </head>
 <body>
-    <a href="https://www.baidu.com">百度链接</a>
-    <br>
     <!-- img的width和height规定图像的尺寸。即，图像的尺寸以属性形式提供 -->
     <img src="static/pic/1.jpg" width="200" height="200">
     <hr>
@@ -16,10 +17,22 @@
         这中间虽然有很  多  空格
         但html会   默认一个空格
     </p>
-    <br>
+    <hr>
     <pre>
         pre标签介绍：
             对空行和空格   进行控制操作
     </pre>
+    <hr>
+    <a href="https://www.baidu.com">百度链接</a> <br>
+    <a href="01.1-href.html">文本页面链接</a> <br>
+    <a href="https://www.baidu.com" target="_blank">target属性可以设置在新标签中打开</a> <br>
+    a标签配合mailto:发送电子邮件: <a href="mailto:miaomiaobabbyzy@gmail.com" target="_top">发送邮件</a> <br>
+    创建含边框的图片链接访问GitHub：
+    <a href="https://github.com/lesenelir">
+        <img src="static/pic/1.jpg" width="200" height="200" border="10">
+    </a>
+    <hr>
+    <p style="font-family: Arial;color: plum;font-size: 20px;text-align: center">css内联样式-在标签处添加style属性</p>
+    <hr>
 </body>
 </html>
