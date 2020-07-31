@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>table标签演示</title>
+</head>
+<body>
+    <!-- 表格从tr行开始，每行中又有td代表每行中代表列元素 -->
+    <!-- 定义两行三列表格，就要有两组tr标签，每组标签中有三个td标签 -->
+    <table border="1">
+        <caption>caption标签代表表格的元素</caption>
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+            <td>row 1, cell 3</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+            <td>row 2, cell 3</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h4>跨行跨列表格展示</h4>
+    <table border="1" cellspacing="0">
+        <caption>colspan属性完成单元格跨列</caption>
+        <tr>
+            <!-- th标签代表表头 -->
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>lesenelir</td>
+            <td>6324</td>
+            <td>9870654321</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellpadding="10">
+        <caption>rowspan属性完成跨行</caption>
+        <tr>
+            <th>Name</th>
+            <td>lesenelir</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>6324</td>
+        </tr>
+        <tr>
+            <td>9870654321</td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>
