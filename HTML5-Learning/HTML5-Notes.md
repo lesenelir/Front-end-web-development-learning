@@ -18,3 +18,20 @@
 ### canvas元素
     canvas代表的是一个画布
     <canvas>元素用于图形绘制，要通过JS来完成
+    
+### input标签type新类型
+    color
+    date
+    datetime
+    datetime-local
+    email
+    month
+    number
+    range
+    search
+    tel
+    time
+    url
+    week
+    
+    
