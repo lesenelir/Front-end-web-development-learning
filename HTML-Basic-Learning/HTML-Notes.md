@@ -41,6 +41,13 @@
     通常用<div>标签进行布局，用利于css对元素进行定位
     用<div>标签的时候，建议定义id属性来识别不同的div
     
+### form表单
+    <input type="text" > 文本
+    <input type="password" > 密码
+    <input type="radio" > 单选按钮
+    <input type="checkbox"> 复选按钮
+    <input type="submit"> 提交按钮
+    
   
   
 
