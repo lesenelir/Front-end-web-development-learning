@@ -12,4 +12,18 @@
 - webpack
 - vue
 
+## HTML
+**HTML的学习包含两个方向：**   
+
+- 基础HTML 学习
+- 进阶HTML5学习 
+
+#####  1. 基础HTML学习
+基础阶段的HTML学习对应项目名为HTML-Basic-Learning  
+这个文件夹里的Demo主要来自于[runoob.com](https://www.runoob.com/html/html-tutorial.html)中HTML教程。
+
+
+##### 2.进阶HTML5学习
+进阶阶段的HTML5学习对应项目名为HTML5-Learning  
+这个文件夹里的Demo主要来自于[runoob.com](https://www.runoob.com/html/html5-intro.html)中HTML5教程
 
