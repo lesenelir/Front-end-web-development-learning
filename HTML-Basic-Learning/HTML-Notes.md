@@ -48,6 +48,14 @@
     <input type="checkbox"> 复选按钮
     <input type="submit"> 提交按钮
     
+### HTML快捷键
+    div*5 快速生成五个div
+    有父子级关系的标签可以用>来实现: ul>li
+    带有类名的标签：.demo
+    带有id关系的标签: #demo
+    div类名有顺序的，可以用自增符号$ : .demo$*5
+    标签内部想要有内容，可以用{}符号：div{hello}
+    
   
   
 
