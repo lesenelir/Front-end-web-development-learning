@@ -16,3 +16,11 @@
     边框复合写法 border: 1px solid red;
     
     合并相邻边框 border-collapse:coolapse;
+    
+### 盒子模型-填充
+    padding-top padding-bottom padding-left padding-right
+    填充复合属性：
+        padding:1px;  上下左右1px
+        padding:5px 10px;  上下5px 左右10px
+        padding:5px 10px 20px;  上5px 左右10px 下20px
+        padding:5px 10px 15px 20px; 上右下左（顺时针）
