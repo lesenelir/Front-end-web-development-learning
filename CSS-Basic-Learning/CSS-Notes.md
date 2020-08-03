@@ -86,3 +86,28 @@
     
 ### 行高继承
     行高和盒子高度一样，文字垂直居中
+    
+        
+### 盒子模型-边框
+    边框的粗细 border-width: 20px;
+    边框样式实线 border-style: solid;
+    边框样式虚线 border-style: dashed;
+    边框样式点线 border-style: dotted;
+    
+    边框复合写法 border: 1px solid red;
+    
+    合并相邻边框 border-collapse:coolapse;
+    
+    圆角边框 border-radius: height / 2(圆角矩形可以设置高度一般，圆形直接设置50%);
+    
+### 盒子模型-填充
+    padding-top padding-bottom padding-left padding-right
+    填充复合属性：
+        padding:1px;  上下左右1px
+        padding:5px 10px;  上下5px 左右10px
+        padding:5px 10px 20px;  上5px 左右10px 下20px
+        padding:5px 10px 15px 20px; 上右下左（顺时针）
+        
+### 盒子模型-边距
+    控制盒子与盒子之间的距离
+    块级盒子水平居中对齐： margin: 0 auto; // 上下外边距0 左右auto
