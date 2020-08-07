@@ -91,7 +91,25 @@
     数组长度：
         arr.length  
         
-### JS函数 
+### JS函数
+    声明函数两种方式：
+        1. 命名函数：
+            function 函数名() {函数体}
+        2. 函数表达式（匿名函数）：
+            var 变量名 = function() {函数体}
+            eg: var fn = function() {函数体} // fn是变量名，不是函数名。
+    形参实参：
+        形参是在声明函数的小括号内，实参是在函数调用的小括号内。
+        实参个数小于形参个数，多的形参会定义为undefined，结果为NaN
+    return：
+        return终止函数
+        return只会返回一个结果
+        函数如果没有return则返回undefined
+    arguments:
+        如果不知道要传入多少个参数，可以用arguments来获取。
+        arguments是当前函数的一个内置对象，arguments对象中存储了要传递的所有参数
+                   
+    
         
         
         
