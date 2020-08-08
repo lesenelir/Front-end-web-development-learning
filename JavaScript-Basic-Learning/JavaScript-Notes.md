@@ -166,4 +166,20 @@
     遍历对象：
         for (变量 in 对象) {}   
 
-        
+### JS内置对象  
+    Math数学对象：
+        Math.PI
+        Math.max(1,2,-1)
+        Math.abs(-1)
+        Math.floor()  // 向下取整
+        Math.ceil()  // 向上取整
+        Math.round() // 四舍五入
+        Math.random() // 随机数
+        // 【需求】：得到两个数之间的随机整数 并且包含这2个整数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        } 
+    Date日期对象：
+        日期对象是一个构造函数，必须要new来调用创建我们的日期对象
+           
+    
