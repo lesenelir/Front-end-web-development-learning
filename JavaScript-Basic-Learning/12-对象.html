@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 1.创建对象
+        var obj = {
+            uname: 'lesenelir',
+            age: 18,
+            sayHi: function () {
+                console.log('hi~')
+            }
+        }
+        // 调用对象的属性
+        console.log(obj.uname)
+        console.log(obj['age'])
+        // 调用对象的方法
+        console.log(obj.sayHi())
+
+        // 2.创建对象 new Object
+        var obj2 = new Object()
+        obj2.uname = 'lesenelir'
+        obj2.age = 18
+        obj2.sayHello = function () {
+            console.log('hello~')
+        }
+
+        // 3.构造函数创建对象
+        function Star (uname, age, sex) {
+            this.name = uname
+            this.age = age
+            this.sex = sex
+            this.sing = function (sang) {
+                console.log(sang)
+            }
+        }
+        var ldh = new Star('刘德华', 19, '男')
+        console.log(typeof ldh)
+        console.log(ldh.name)
+        console.log(ldh['sex'])
+        console.log(ldh.sing('冰雨'))
+
+
+        var zxy = new Star('张学友', 19, '男')
+        console.log(zxy)
+        console.log(zxy.sing('李兰香'))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
