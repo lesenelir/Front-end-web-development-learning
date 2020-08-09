@@ -205,4 +205,5 @@
             数组转换成字符串：
                 arr.toString()
                 arr.join(分隔符)  // arr.join('-')  
-    字符串对象
+        
+        
