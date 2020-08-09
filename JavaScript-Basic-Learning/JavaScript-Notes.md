@@ -84,6 +84,7 @@
     创建数组两种方式:
         1. new关键字创建数组
             var 数组名 = new Array();
+            var 数组名 = new Array(2); // 数组长度是2
         2. 数组字面量创建数组【常用】
             var 数组名 = [];
             eg: var arr = [1, 2.5, 'lesenelir', true];
@@ -181,5 +182,27 @@
         } 
     Date日期对象：
         日期对象是一个构造函数，必须要new来调用创建我们的日期对象
-           
-    
+    Array数组对象：
+        数组创建:
+            var 数组名 = new Array();
+            var 数组名 = new Array(2); // 数组长度是2
+            var 数组名 = new Array(2, 3); // 创建元素是2, 3的数组
+        数组方法：
+            添加元素：
+                添加末尾：arr.push(4, 'pink')  push完毕后是有一个返回值，是新数组长度
+                添加前面：arr.unshift(4, 'pinnk')
+            删除元素：
+                删除末尾一个元素 arr.pop()  pop完毕后是有一个返回值，返回值是被删除的元素
+                删除前面一个元素 arr.shift() shift完毕后有一个返回值，返回值是被删除的元素
+            数组排序：
+                翻转：arr.reverse()
+                排序：arr.sort(function (a, b) {
+                         return a - b // 升序
+                         return b - a // 降序
+                     })
+            获取数组索引号：
+                arr.indexOf(数组元素)
+            数组转换成字符串：
+                arr.toString()
+                arr.join(分隔符)  // arr.join('-')  
+    字符串对象

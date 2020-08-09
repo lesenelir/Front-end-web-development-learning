@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [1500, 1200, 2000, 2100, 1800]
+        var newArr = []
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < 2000) {
+                // newArr[newArr.length] = arr[i]
+                newArr.push(arr[i])
+            }
+        }
+        console.log(newArr)
+
+        // 翻转
+        arr.reverse()
+        console.log(arr)
+
+        // 排序
+        arr.sort(function (a, b) {
+            return a - b  // 升序
+            // return b - a  // 降序
+        })
+        console.log(arr)
+
+        // 数组去重
+        var arrOld = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b']
+        function unique(arrOld) {
+            var newArr = []
+            for (var i = 0; i < arrOld.length; i++) {
+                if (newArr.indexOf(arrOld[i]) === -1) {
+                    newArr.push(arrOld[i])
+                }
+            }
+            return newArr
+        }
+        console.log(unique(arrOld))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
