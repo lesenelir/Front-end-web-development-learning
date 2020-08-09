@@ -42,7 +42,7 @@ CSS内容的学习Demo有一部分来自于[runoob.com](https://www.runoob.com/c
 **JavaScript的学习包含三部分内容：**
 
 - ECMAScript
-- DOM操作
+- WebAPIs-DOM-BOM 页面交互功能
 - JavaScript面向对象 ES6
 
 **1. ECMAScript**
