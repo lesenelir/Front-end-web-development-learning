@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改元素属性</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <button id="tse">谢霆锋</button>
+    <button id ="shiro">金城武</button>
+    <!-- alt是图片的文本 -->
+    <img src="images/tse.jpg" alt="" title="谢霆锋">
+
+    <script>
+        // 获取事件源
+        var tse = document.getElementById('tse')
+        var shiro = document.getElementById('shiro')
+        var img = document.querySelector('img')
+        // 注册事件 处理程序
+        shiro.onclick = function () {
+            img.src = "images/shiro.jpg"
+            img.title = "金城武"
+        }
+        tse.onclick = function () {
+            img.src = "images/tse.jpg"
+            img.title = "谢霆锋"
+        }
+
+    </script>
+</body>
+</html>
