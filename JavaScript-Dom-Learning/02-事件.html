@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="btn">唐伯虎</button>
+
+    <div>123</div>
+
+    <script>
+        // 事件源 谁（对象）被事件触发
+        var btn = document.getElementById('btn')
+        // 事件类型
+        // 事件处理程序
+        btn.onclick = function () {
+            alert('事件完成')
+        }
+
+        // 事件执行步骤
+        // 1.获取事件
+        var div = document.querySelector('div')
+        // 2.绑定事件
+        // 3.添加事件处理程序
+        div.onclick = function () {
+            alert('事件执行完毕')
+        }
+
+    </script>
+
+</body>
+</html>

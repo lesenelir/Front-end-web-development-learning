@@ -26,3 +26,14 @@
             document.body // 返回body元素对象
         获取html元素
             document.documentElement // 返回html元素对象
+            
+### 事件基础
+    事件是JS检测到的行为，即：触发---响应机制
+    1.事件三要素：
+        事件源：
+            事件被触发的对象，谁触发了事件
+        事件类型：
+            如何触发事件，比如：
+            鼠标点击onclick，鼠标经过onmouseover，键盘按下
+        事件处理程序：
+            通过一个函数赋值的方式完成
