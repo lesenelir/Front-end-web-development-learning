@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <button>按钮4</button>
+    <button>按钮5</button>
+
+    <script>
+        // 获取所有按钮
+        var btns = document.getElementsByTagName('button')
+        // btns是伪数组
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                for (var j = 0; j < btns.length; j++) {
+                    btns[j].style.backgroundColor = ''
+                }
+                this.style.backgroundColor = 'pink'
+            }
+        }
+        // 首先排除其他人，再设置自己的样式。
+    </script>
+</body>
+</html>

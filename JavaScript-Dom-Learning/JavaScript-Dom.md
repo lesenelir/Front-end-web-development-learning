@@ -34,8 +34,9 @@
             事件被触发的对象，谁触发了事件
         事件类型：
             如何触发事件，比如：
-            鼠标点击onclick，鼠标经过onmouseover，键盘按下
+            鼠标点击onclick，键盘按下
             失去焦点onblur，获取焦点onfocus
+            鼠标经过onmouseover，鼠标离开onmouseout
         事件处理程序：
             通过一个函数赋值的方式完成
 
