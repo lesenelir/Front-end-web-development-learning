@@ -35,6 +35,7 @@
         事件类型：
             如何触发事件，比如：
             鼠标点击onclick，鼠标经过onmouseover，键盘按下
+            失去焦点onblur，获取焦点onfocus
         事件处理程序：
             通过一个函数赋值的方式完成
 
@@ -44,6 +45,14 @@
         element.innerHTML 从起始位置到终止位置全部内容，识别html标签，同时保留空格和换行
     2.修改元素属性
         元素.属性 
+        src href title alt元素属性
+    3.修改表单属性
+        type 表单类型
+        value 修改表单内容
+        element.disable = true 禁用按钮
+    4.修改元素样式属性
+        element.style  行内样式操作
+        element.className  类名样式操作 (直接更改元素的类名，会覆盖原先的类名)  
         
     
         
