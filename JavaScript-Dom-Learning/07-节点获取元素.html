@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- 节点的优点 -->
+    <div>我是div</div>
+    <span>我是span</span>
+    <ul>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <div class="demo">
+        <div class="box">
+            <span class="erweima">×</span>
+        </div>
+    </div>
+
+    <script>
+        // 1.父节点 parentNode
+        var erweima = document.querySelector('.erweima')
+        // var box = document.querySelector('.box')
+        console.log(erweima.parentNode)
+
+        // 2. 子结点
+        var ul = document.querySelector('ul')
+        var lis = ul.querySelector('li')
+        // 子结点 包含元素节点 文本节点
+        console.log(ul.childNodes)
+        // 子元素节点
+        console.log(ul.children)
+        // 第一个子结点
+        console.log(ul.firstElementChild)
+        // 最后一个子结点
+        console.log(ul.lastElementChild)
+
+    </script>
+
+</body>
+</html>

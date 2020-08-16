@@ -54,6 +54,32 @@
     4.修改元素样式属性
         element.style  行内样式操作
         element.className  类名样式操作 (直接更改元素的类名，会覆盖原先的类名)  
-        
+    5.自定义属性操作
+        获取属性值:
+            element.属性
+            element.getAttribute('属性') //通常用于获得自定义属性值
+        设置属性值：
+            element.属性 = '值'
+            element.setAttribute('属性', '值') //通常用于自定义属性
+        案例：tab切换      
+        H5自定义属性新规范：
+            data- 开头的属性是自定义属性       
     
+### 节点操作
+    页面所有内容都是节点（标签、属性、文本、注释），DOM中节点使用node来表示
+    1.节点属性：
+        nodeType 节点类型
+            元素节点 nodeType 为 1 【主要】
+            属性节点 nodeType 为 2
+            文本节点 nodeType 为 3
+        nodeName 节点名称
+        nodeValue 节点值
+    2.节点层级：
+        父级节点 parentNode
+        子元素节点 parentNode.children【伪数组】
+        第一个子元素结点 parentNode.firstElementChild | parentNode.children[0]
+        最后一个子元素结点 parentNode.lastElementChild | parentNode.children[parent.children.length-1]
+        下一个兄弟元素节点 node.nextElementSibling
+        上一个兄弟元素节点 node.previousElementSibling
         
+    1.获取元素：利用节点层级关系获取元素 【相比较直接获取元素更加简单】        
