@@ -5,6 +5,30 @@
     <title>Title</title>
 </head>
 <body>
+    <ul>
+        <li>熊大</li>
+        <li>熊二</li>
+        <li>光头强</li>
+    </ul>
 
+
+
+    <script>
+        // 1.创建节点元素节点
+        var li = document.createElement('li')
+
+        // 2.添加节点
+        var ul = document.querySelector('ul')
+        ul.appendChild(li)
+        // 添加指定节点元素
+        var lili = document.createElement('li')
+        ul.insertBefore(lili, ul.children[0])
+
+        // 3.删除节点
+        var ul = document.querySelector('ul')
+        ul.removeChild(ul.children[0])
+
+
+    </script>
 </body>
 </html>

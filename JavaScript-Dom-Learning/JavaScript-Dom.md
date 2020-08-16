@@ -74,12 +74,22 @@
             文本节点 nodeType 为 3
         nodeName 节点名称
         nodeValue 节点值
-    2.节点层级：
+    2.节点层级：通过节点层级关系获取元素【常用】
         父级节点 parentNode
         子元素节点 parentNode.children【伪数组】
         第一个子元素结点 parentNode.firstElementChild | parentNode.children[0]
         最后一个子元素结点 parentNode.lastElementChild | parentNode.children[parent.children.length-1]
         下一个兄弟元素节点 node.nextElementSibling
-        上一个兄弟元素节点 node.previousElementSibling
-        
-    1.获取元素：利用节点层级关系获取元素 【相比较直接获取元素更加简单】        
+        上一个兄弟元素节点 node.previousElementSibling     
+    3.CRUD节点：
+        动态创建节点：
+            document.createElement('tagName')
+        添加节点：
+            node.appendChild(child) 将一个节点添加到指定父节点的子节点列列表末尾 node是父级 child是子级
+            node.insertBefore(child, 指定元素) 将一个节点添加到父节点的指定子节点前面        
+        删除节点：
+            node.removeChild(child) 删除一个子节点并返回子节点
+        复制节点：
+            node.cloneNode() 浅拷贝：只复制标签不复制标签里的内容
+            node.cloneNode(true) 深拷贝：复制标签并复制里面的内容
+            
