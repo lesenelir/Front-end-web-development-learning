@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 500px;
+            margin: 100px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid #333;
+        }
+
+        thead tr {
+            height: 40px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="0">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>科目</th>
+            <th>成绩</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        // 1.准备好学生数据
+        var datas = [{
+            name: 'lee',
+            subject: 'javascript',
+            score: 100
+        }, {
+            name: 'otto',
+            subject: 'javascript',
+            score: 98
+        }, {
+            name: 'ioio',
+            subject: 'javascript',
+            score: 99
+        }, {
+            name: 'ytyt',
+            subject: 'javascript',
+            score: 99
+        }
+        ]
+        // 2.往tbody里面创建行
+        var tbody = document.querySelector('tbody')
+        for (var i = 0; i < datas.length; i++) { // tr
+            // 1.创建tr行
+            var tr = document.createElement('tr')
+            tbody.appendChild(tr)
+            // 2.行里面创建单元格 单元格数量取决于每个对象里面的属性个数
+            for (var k in datas[i]) { // td
+                // 创建单元格
+                var td = document.createElement('td')
+                // 把对象里面的属性值给td
+                td.innerHTML = datas[i][k]
+                tr.appendChild(td)
+            }
+            // 3. 创建删除单元格
+            var td = document.createElement('td')
+            td.innerHTML = '<a href = "javascript:;">删除</a>'
+            tr.appendChild(td)
+        }
+        // 4.删除操作
+        var as = document.querySelector('a')
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function () {
+                tbody.removeChild(this.parentNode.parentNode)
+            }
+        }
+
+
+    </script>
+</body>
+</html>
