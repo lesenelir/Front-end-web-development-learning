@@ -52,3 +52,6 @@ ECMAScript内容对应JavaScript-Basic-Learning文件夹，这个文件夹主要
 
 **2. DOM操作**
 
+DOM操作的内容分为两部分，第一部分是在JavaScript-DOM-Learning文件夹内，这个文件夹主要介绍了一下DOM的基础操作。  
+DOM操作的第二部分内容，主要见解了《JavaScript DOM编程艺术》这一本书，也实现了该书的大部分内容。
+
