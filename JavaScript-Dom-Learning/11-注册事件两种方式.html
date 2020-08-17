@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button>传统方法注册事件</button>
+    <button>方法监听注册事件</button>
+
+    <script>
+        var btns = document.querySelectorAll('button')
+        // 1. 传统方式注册事件 【会覆盖】
+        btns[0].onclick = function () {
+            alert('hi')
+        }
+        btns[0].onclick = function () {
+            alert('hello')
+        }
+
+        // 2.事件监听注册事件
+        // 同一个元素 同一个事件可以添加多个监听器（事件处理程序）
+        btns[1].addEventListener('click', function () {
+            alert(22)
+        })
+        btns[1].addEventListener('click', function () {
+            alert(33)
+        })
+    </script>
+</body>
+</html>

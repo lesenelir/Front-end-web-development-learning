@@ -92,4 +92,38 @@
         复制节点：
             node.cloneNode() 浅拷贝：只复制标签不复制标签里的内容
             node.cloneNode(true) 深拷贝：复制标签并复制里面的内容
+ 
+### 注册事件
+    注册事件两种方法：
+        1.利用on开头的事件 (特点：注册事件唯一性)
+        2.方法监听注册方式 addEventListener() 它是一个方法 (同一元素同一事件可以注册多个监听器)
+            eventTarget.addEventListener('type', listener[, useCapture])
+            将指定的监听器注册到eventTarget(目标对象)上 
+            type 事件类型，click mouseover 不用带on
+            listener 事件处理函数，事件发生时，会调用该监听函数
+            useCapture 可选参数，是一个布尔值，默认值是false（冒泡阶段）， true（捕获阶段）
             
+### 删除事件
+    1.传统方法
+        在方法调用末尾添加 onclick = null
+    2.方法监听方式
+        eventTarget.removeEventListener('type', listener[, useCapture])
+        eventTarget.datachEvent(eventNameWithOn, callback)
+        
+### DOM事件流
+    概述：事件发生会在元素节点之间按照特定的顺序传播，这个传播过程即DOM事件流
+    DOM事件流分为三个阶段：
+        捕获阶段（从上到下）
+        当前目标阶段
+        冒泡阶段（从下到上）
+        
+### 事件对象
+    事件对象属性方法
+    e.target 返回触发事件的对象 【常用】
+    e.srcElement 返回触发事件的对象
+    e.type 返回事件的类型
+    e.cancelBubble 阻止冒泡
+    e.stopPropagation() 阻止冒泡【常用】
+    e.returnValue 阻止默认事件
+    e.preventDefault() 阻止默认事件【常用】
+    
