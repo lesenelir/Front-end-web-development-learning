@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
+        // 数组也是一种对象
         var arr = [1500, 1200, 2000, 2100, 1800]
         var newArr = []
         for (var i = 0; i < arr.length; i++) {
@@ -27,6 +28,7 @@
 
         // 数组去重
         var arrOld = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b']
+
         function unique(arrOld) {
             var newArr = []
             for (var i = 0; i < arrOld.length; i++) {
@@ -36,6 +38,7 @@
             }
             return newArr
         }
+
         console.log(unique(arrOld))
     </script>
 </head>
